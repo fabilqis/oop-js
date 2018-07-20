@@ -78,16 +78,23 @@
 // waiting();
 
 
-const numberOrNot = (input) => {
-    return new Promise((resolve, reject) => {
-        if (typeof input === "number") {
-            resolve("input is number")
-        } else {
-            reject(Error("input is not number"))
-        }
-    })
-}
+// const numberOrNot = (input) => {
+//     return new Promise((resolve, reject) => {
+//         if (typeof input === "number") {
+//             resolve("input is number")
+//         } else {
+//             reject(Error("input is not number"))
+//         }
+//     })
+// }
 
-numberOrNot(42).then(Response => console.log(Response)).catch(Error => console.log(Error))
-numberOrNot(true).then(Response => console.log(Response)).catch(Error => console.log(Error))
-numberOrNot("456").then(Response => console.log(Response)).catch(Error => console.log(Error))
+// numberOrNot(42).then(Response => console.log(Response)).catch(Error => console.log(Error))
+// numberOrNot(true).then(Response => console.log(Response)).catch(Error => console.log(Error))
+// numberOrNot("456").then(Response => console.log(Response)).catch(Error => console.log(Error))
+
+
+// var rejectedPromise = Promise.reject(new Error('Whatever'));
+// // equivalent to
+// var rejectedPromise = new Promise(function (fulfill, reject) {
+//   reject(new Error('Whatever'));
+// });
