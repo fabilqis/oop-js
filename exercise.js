@@ -136,9 +136,12 @@ const multipleByThree = (result) => {
     return Promise.resolve(result * 3);
 }
 
-async function mySyncs()
-{
-    let result = await numberValidation(2).then(multipleByTwo).then(multipleByTwo).then(multipleByThree).then(res => {return res}).catch(err => {return err})
+async function mySyncs() {
+    let result = await numberValidation(2).then(multipleByTwo).then(multipleByTwo).then(multipleByThree).then(res => {
+        return res
+    }).catch(err => {
+        return err
+    })
     console.log(result)
 }
 
